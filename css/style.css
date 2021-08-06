@@ -316,6 +316,9 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .player {
+        margin-bottom: 15px;
+    }
     .players .player img {
         width: 100%;
     }
