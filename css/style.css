@@ -281,6 +281,11 @@ main {
     .counter {
         margin: 30px;
     }
+
+    .footer img {
+        width: 100%;
+    }
+
 }
 
 /* tablet devices */
@@ -319,6 +324,7 @@ main {
     .player {
         margin-bottom: 15px;
     }
+
     .players .player img {
         width: 100%;
     }
@@ -331,8 +337,10 @@ main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .counter {
         margin: 20px;
     }
+
 
 }
