@@ -166,8 +166,8 @@ main {
 
 .counter {
     text-align: center;
-    background: rgb(0,194,255);
-background: linear-gradient(155deg, rgba(0,194,255,1) 0%, rgba(17,0,255,1) 100%);
+    background: rgb(0, 194, 255);
+    background: linear-gradient(155deg, rgba(0, 194, 255, 1) 0%, rgba(17, 0, 255, 1) 100%);
     padding: 30px;
     border-radius: 10px;
 }
@@ -226,4 +226,110 @@ background: linear-gradient(155deg, rgba(0,194,255,1) 0%, rgba(17,0,255,1) 100%)
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+}
+
+/* Media Queries */
+/* Mobile Device */
+
+@media only screen and (max-width: 668px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-part {
+        padding-left: 35px;
+    }
+
+    .banner-content .left-banner h2 {
+        font-size: 40px;
+    }
+
+    .right-banner {
+        padding-top: 45px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        margin: 15px;
+    }
+
+    .players .player img {
+        width: 100%;
+    }
+
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match h3 {
+        padding-bottom: 30px;
+    }
+
+    .counters {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .counter {
+        margin: 30px;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-part {
+        padding-left: 35px;
+        text-align: center;
+    }
+
+    .banner-content .left-banner h2 {
+        font-size: 40px;
+    }
+
+
+    .right-banner {
+        padding-top: 60px;
+    }
+
+    .right-banner img {
+        width: 70%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .players .player img {
+        width: 100%;
+    }
+
+    .matches {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .counters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .counter {
+        margin: 20px;
+    }
+
 }
